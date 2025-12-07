@@ -1,0 +1,52 @@
+name: Deploy to Staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for staging deployment'
+        required: false
+        default: 'Manual staging deployment'
+
+jobs:
+  deploy-staging:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build application
+        run: npm run build
+        env:
+          NODE_ENV: production
+          NEXT_PUBLIC_APP_NAME: "{{CLIENT_NAME}} - Staging"
+          NEXT_PUBLIC_APP_URL: "https://{{CLIENT_SLUG}}.staging.freebeer.ai"
+
+      - name: Deploy to Vercel (Staging)
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+
+      - name: Create deployment comment
+        if: success()
+        run: |
+          echo "✅ Successfully deployed to {{CLIENT_SLUG}}.staging.freebeer.ai"
+          echo "Deployment URL: https://{{CLIENT_SLUG}}.staging.freebeer.ai"
+          echo "Reason: ${{ github.event.inputs.reason }}"
