@@ -1,0 +1,427 @@
+{
+  "config": {
+    "id": "coffee-shop",
+    "name": "Coffee Shop",
+    "description": "Modern coffee shop and café template with menu, location, and events",
+    "version": "1.0.0",
+    "industry": "food-beverage",
+    "tags": [
+      "coffee",
+      "café",
+      "restaurant",
+      "local-business",
+      "artisan"
+    ],
+    "theme": {
+      "primary": "#3B2F2F",
+      "secondary": "#D4A574",
+      "accent": "#8B4513",
+      "neutral": "#F5F5DC",
+      "fonts": {
+        "heading": "Playfair Display",
+        "body": "Open Sans"
+      }
+    },
+    "features": [
+      "menu",
+      "location",
+      "hours",
+      "events",
+      "online-ordering"
+    ],
+    "seo": {
+      "keywords": [
+        "coffee shop",
+        "café",
+        "espresso",
+        "artisan coffee",
+        "local coffee"
+      ],
+      "schema": "Restaurant"
+    }
+  },
+  "pages": {
+    "hero": {
+      "headline": "Welcome to Bob's Boxes",
+      "subheadline": "Your neighborhood coffee shop in {{LOCATION}}",
+      "tagline": "What's in the Box?",
+      "cta_primary": "Visit Us Today",
+      "cta_secondary": "View Menu"
+    },
+    "about": {
+      "headline": "Our Story",
+      "subheadline": "Crafted with passion, served with love",
+      "body": "Founded in {{LOCATION}}, Bob's Boxes is more than just a coffee shop—it's a gathering place for our community. We believe great coffee starts with quality beans and skilled baristas who care about every cup.\n\nOur mission is simple: create a warm, welcoming space where friends meet, ideas flow, and the coffee is always exceptional. Whether you're grabbing a quick espresso or settling in for an afternoon of work, we're here to make your day better, one cup at a time.",
+      "values": [
+        {
+          "title": "Quality First",
+          "description": "We source only the finest beans and take pride in every brew"
+        },
+        {
+          "title": "Community Focused",
+          "description": "Your local gathering place for connection and conversation"
+        },
+        {
+          "title": "Sustainably Sourced",
+          "description": "Supporting farmers and protecting our planet"
+        }
+      ]
+    },
+    "menu": {
+      "headline": "Our Menu",
+      "subheadline": "Crafted with care, made fresh daily",
+      "categories": [
+        {
+          "name": "Coffee & Espresso",
+          "description": "Expertly crafted using premium beans",
+          "items": [
+            {
+              "name": "Classic Drip Coffee",
+              "description": "Smooth, full-bodied daily roast",
+              "price": "$3.50"
+            },
+            {
+              "name": "Espresso",
+              "description": "Rich, bold shot of excellence",
+              "price": "$3.00"
+            },
+            {
+              "name": "Cappuccino",
+              "description": "Espresso with steamed milk and foam",
+              "price": "$4.50"
+            },
+            {
+              "name": "Latte",
+              "description": "Smooth espresso with steamed milk",
+              "price": "$4.75"
+            },
+            {
+              "name": "Americano",
+              "description": "Espresso with hot water",
+              "price": "$3.75"
+            }
+          ]
+        },
+        {
+          "name": "Specialty Drinks",
+          "description": "Our signature creations",
+          "items": [
+            {
+              "name": "Caramel Macchiato",
+              "description": "Espresso with vanilla, steamed milk, and caramel",
+              "price": "$5.50"
+            },
+            {
+              "name": "Mocha",
+              "description": "Rich chocolate and espresso blend",
+              "price": "$5.25"
+            },
+            {
+              "name": "Seasonal Special",
+              "description": "Ask about our rotating seasonal drinks",
+              "price": "$5.75"
+            }
+          ]
+        },
+        {
+          "name": "Pastries & Snacks",
+          "description": "Fresh baked daily",
+          "items": [
+            {
+              "name": "Croissants",
+              "description": "Butter, chocolate, or almond",
+              "price": "$4.00"
+            },
+            {
+              "name": "Muffins",
+              "description": "Blueberry, banana nut, or chocolate chip",
+              "price": "$3.50"
+            },
+            {
+              "name": "Bagels",
+              "description": "With cream cheese",
+              "price": "$4.50"
+            }
+          ]
+        }
+      ]
+    },
+    "location": {
+      "headline": "Visit Us",
+      "subheadline": "Find us in the heart of Republic",
+      "address": {
+        "street": "23 Maple",
+        "city": "Republic",
+        "state": "MO",
+        "zip": "65738",
+        "full": "23 Maple, Republic, MO 65738"
+      },
+      "contact": {
+        "phone": "(417) 923-0987",
+        "email": "hi@bobsboxes.com"
+      },
+      "hours": {
+        "monday": "7:00 AM - 7:00 PM",
+        "tuesday": "7:00 AM - 7:00 PM",
+        "wednesday": "7:00 AM - 7:00 PM",
+        "thursday": "7:00 AM - 7:00 PM",
+        "friday": "7:00 AM - 8:00 PM",
+        "saturday": "8:00 AM - 8:00 PM",
+        "sunday": "8:00 AM - 6:00 PM"
+      },
+      "parking": "Free parking available in rear lot",
+      "accessibility": "Wheelchair accessible entrance and restrooms"
+    },
+    "events": {
+      "headline": "Events & Community",
+      "subheadline": "More than just coffee—join our community",
+      "upcoming": [
+        {
+          "title": "Open Mic Night",
+          "description": "Share your music, poetry, or comedy",
+          "schedule": "Every Friday, 7:00 PM"
+        },
+        {
+          "title": "Latte Art Workshop",
+          "description": "Learn from our expert baristas",
+          "schedule": "First Saturday of each month, 10:00 AM"
+        }
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Outdoor Seating",
+        "Pet Friendly Patio",
+        "Power Outlets Throughout"
+      ]
+    },
+    "cta": {
+      "headline": "Visit Bob's Boxes Today",
+      "subheadline": "Experience the best coffee in {{LOCATION}}",
+      "button_text": "Get Directions",
+      "secondary_text": "Call us at (417) 923-0987"
+    },
+    "footer": {
+      "tagline": "Bob's Boxes - Where Coffee Meets Community",
+      "copyright": "© 2025 Bob's Boxes. All rights reserved.",
+      "social": {
+        "instagram": "@bobs",
+        "facebook": "",
+        "twitter": ""
+      },
+      "links": [
+        {
+          "text": "Menu",
+          "url": "/menu"
+        },
+        {
+          "text": "About",
+          "url": "/about"
+        },
+        {
+          "text": "Events",
+          "url": "/events"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact"
+        }
+      ]
+    },
+    "seo": {
+      "home": {
+        "title": "Bob's Boxes - Coffee Shop in {{LOCATION}}",
+        "description": "Best coffee shop in {{LOCATION}}. Enjoy artisan coffee, fresh pastries, and a cozy atmosphere at Bob's Boxes. Visit us today!"
+      },
+      "menu": {
+        "title": "Menu - Bob's Boxes | {{LOCATION}} Coffee Shop",
+        "description": "Explore our menu of expertly crafted coffee, espresso drinks, and fresh pastries at Bob's Boxes in {{LOCATION}}."
+      },
+      "about": {
+        "title": "About Us - Bob's Boxes | {{LOCATION}}",
+        "description": "Learn about Bob's Boxes, your neighborhood coffee shop in {{LOCATION}}. Quality coffee, community focus, sustainably sourced."
+      },
+      "contact": {
+        "title": "Contact & Location - Bob's Boxes | {{LOCATION}}",
+        "description": "Visit Bob's Boxes at 23 Maple, Republic, MO. Open daily. Call (417) 923-0987 or stop by for the best coffee in {{LOCATION}}."
+      }
+    }
+  },
+  "navigation": {
+    "pages": [
+      {
+        "id": "home",
+        "title": "Home",
+        "path": "/",
+        "sections": [
+          "hero",
+          "about",
+          "menu-preview",
+          "events",
+          "location",
+          "cta"
+        ],
+        "navigation": true,
+        "priority": 1,
+        "layout": "landing"
+      },
+      {
+        "id": "menu",
+        "title": "Menu",
+        "path": "/menu",
+        "sections": [
+          "menu-header",
+          "menu-categories",
+          "menu-cta"
+        ],
+        "navigation": true,
+        "priority": 2,
+        "layout": "content"
+      },
+      {
+        "id": "about",
+        "title": "About Us",
+        "path": "/about",
+        "sections": [
+          "about-hero",
+          "about-story",
+          "about-values",
+          "about-team"
+        ],
+        "navigation": true,
+        "priority": 3,
+        "layout": "content"
+      },
+      {
+        "id": "events",
+        "title": "Events",
+        "path": "/events",
+        "sections": [
+          "events-hero",
+          "events-upcoming",
+          "events-amenities"
+        ],
+        "navigation": true,
+        "priority": 4,
+        "layout": "content"
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "path": "/contact",
+        "sections": [
+          "contact-hero",
+          "contact-info",
+          "contact-hours",
+          "contact-map"
+        ],
+        "navigation": true,
+        "priority": 5,
+        "layout": "content"
+      }
+    ],
+    "navigation": {
+      "primary": [
+        "home",
+        "menu",
+        "about",
+        "events",
+        "contact"
+      ],
+      "footer": [
+        "menu",
+        "about",
+        "events",
+        "contact"
+      ],
+      "mobile": [
+        "home",
+        "menu",
+        "about",
+        "contact"
+      ]
+    },
+    "metadata": {
+      "favicon": "/favicon.ico",
+      "logo": "/logo.png",
+      "og_image": "/og-image.jpg",
+      "theme_color": "#3B2F2F"
+    }
+  },
+  "images": {
+    "hero": {
+      "query": "coffee shop interior cozy warm lighting",
+      "alt": "{{BUSINESS_NAME}} cozy interior",
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "collections": [
+        "1163637"
+      ]
+    },
+    "about": {
+      "query": "barista making latte art coffee",
+      "alt": "Our skilled baristas at {{BUSINESS_NAME}}",
+      "width": 800,
+      "height": 600,
+      "orientation": "landscape"
+    },
+    "menu": {
+      "query": "coffee and pastries on table",
+      "alt": "Fresh coffee and pastries at {{BUSINESS_NAME}}",
+      "width": 1200,
+      "height": 800,
+      "orientation": "landscape"
+    },
+    "coffee": {
+      "query": "espresso shot close up",
+      "alt": "Expertly crafted espresso",
+      "width": 600,
+      "height": 800,
+      "orientation": "portrait"
+    },
+    "atmosphere": {
+      "query": "people sitting in coffee shop laptop",
+      "alt": "Working and relaxing at {{BUSINESS_NAME}}",
+      "width": 1200,
+      "height": 800,
+      "orientation": "landscape"
+    },
+    "events": {
+      "query": "acoustic guitar open mic night coffee shop",
+      "alt": "Live events at {{BUSINESS_NAME}}",
+      "width": 1200,
+      "height": 800,
+      "orientation": "landscape"
+    },
+    "pastries": {
+      "query": "fresh croissants display case bakery",
+      "alt": "Fresh baked pastries daily",
+      "width": 800,
+      "height": 600,
+      "orientation": "landscape"
+    },
+    "outdoor": {
+      "query": "coffee shop patio outdoor seating",
+      "alt": "Outdoor seating at {{BUSINESS_NAME}}",
+      "width": 1200,
+      "height": 800,
+      "orientation": "landscape"
+    }
+  },
+  "data": {
+    "BUSINESS_NAME": "Bob's Boxes",
+    "BUSINESS_LOCATION": "Republic, MO",
+    "CITY": "Republic",
+    "STATE": "MO",
+    "ZIP": "65738",
+    "PHONE": "(417) 923-0987",
+    "EMAIL": "hi@bobsboxes.com",
+    "TAGLINE": "What's in the Box?",
+    "ADDRESS": "23 Maple",
+    "INSTAGRAM": "@bobs",
+    "FACEBOOK": "",
+    "TWITTER": "",
+    "LINKEDIN": "",
+    "YEAR": 2025
+  }
+}
